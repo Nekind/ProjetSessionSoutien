@@ -1,0 +1,128 @@
+
+@font-face {
+    font-family: Logo;
+    src: url(coolvetica rg.ttf);
+}
+
+body {
+  margin: 0;
+}
+
+#background {
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-image: url(backgroundimage.jpg);
+  position:absolute;
+left:0;
+right:0;
+top:0;
+bottom:0;
+background-size:cover;
+z-index:1;
+}
+
+.content{
+	position:relative;
+	z-index:2;
+
+}
+#logo img{
+
+    float:left;
+    margin-left: 30px;
+    margin-top: 10px;
+    height: 90px;
+    width: 230px;
+
+}
+
+#millieu {
+    margin: 0 auto;
+    width: 400px;
+
+}
+.entete {
+  padding-top: 50px;
+  padding-left: 70px;
+  text-align: center;
+  transform: rotate(10deg);
+}
+
+.entete p{
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.ulNavBar {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.ulNavBar li{
+    Float: right;
+    margin-top: 20px;
+  }
+
+.ulNavBar a{
+    display: block;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    }
+
+.ulNavBar a:hover {
+  transform: translatey(10px);
+  transition: all 0.25s linear;
+}
+
+.button {
+    display: block;
+    border-radius: 4px;
+    background-color: transparent;
+    border: solid;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 20px;
+    margin-top: 70px;
+   }
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
