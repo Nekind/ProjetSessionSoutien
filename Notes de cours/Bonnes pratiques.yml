@@ -1,0 +1,89 @@
+
+
+gitignore:
+Vous n'etes pas obligé de committer tous vos fichiers sur git, vous pouvez utiliser le fichier de configuration .gitignore pour dire a git d'ignorer certain fichier et certain dossiers lorsque les versions sont comparé.
+
+Mot de passe et clés SSH:
+Il est fortement deconseillé d'include des informations confidentielles sur Github.
+Car il y a des bots qui scannent tous les changements pour trouver des mot de passes.
+Meme dans des répertoires privés
+
+Description de modification:
+Décrit ce qui a été changé et le pourquoi
+Mettre le plus important sur la premiere ligne
+Etre assez descriptif (plus de trois mots)
+
+
+Script:
+Ayez un convention avec vos script
+Nommer vos scripts git_WipeEverything
+
+
+
+Commit Often, Perfect Later, Publish Once:
+
+Commit Related Changes:
+A commit should be a wrapper for related changes. For example, fixing two different bugs should produce two separate commits. Small commits make it easier for other team members to understand the changes and roll them back if something went wrong. With tools like the staging area and the ability to stage only parts of a file, Git makes it easy to create very granular commits.
+
+Commit Souvent:
+Commiter souvent permet de garder les changement petits ce qui facilite la comparaison de version, et de rester dans le meme scope. Moreover, it allows you to share your code more frequently with others. That way it’s easier for everyone to integrate changes regularly and avoid having merge conflicts. Having few large commits and sharing them rarely, in contrast, makes it hard both to solve conflicts and to comprehend what happened.
+
+Revisez vos commits le lendemain matin:
+
+
+Don’t Commit Half-Done Work:
+You should only commit code when it’s completed. This doesn’t mean you have to complete a whole, large feature before committing. Quite the contrary: split the feature’s implementation into logical chunks and remember to commit early and often. But don’t commit just to have something in the repository before leaving the office at the end of the day. If you’re tempted to commit just because you need a clean working copy (to check out a branch, pull in changes, etc.) consider using Git’s “Stash” feature instead.
+
+Testez votre code avant de faire un Commit:
+Resist the temptation to commit something that you “think” is completed. Test it thoroughly to make sure it really is completed and has no side effects (as far as one can tell). While committing half-baked things in your local repository only requires you to forgive yourself, having your code tested is even more important when it comes to pushing / sharing your code with others.
+
+Ecrivez des bon message de commit:
+Begin your message with a short summary of your changes (up to 50 characters as a guideline). Separate it from the following body by including a blank line. The body of your message should provide detailed answers to the following questions: What was the motivation for the change? How does it differ from the previous implementation? Use the imperative, present tense („change“, not „changed“ or „changes“) to be consistent with generated messages from commands like git merge.
+
+Le Controle de Version n'est pas un back-up:
+Having your files backed up on a remote server is a nice side effect of having a version control system. But you should not use your VCS like it was a backup system. When doing version control, you should pay attention to committing semantically (see “related changes”) you shouldn’t just cram in files.
+
+Use Branches:
+Branching is one of Git’s most powerful features – and this is not by accident: quick and easy branching was a central requirement from day one. Branches are the perfect tool to help you avoid mixing up different lines of development. You should use branches extensively in your development workflows: for new features, bug fixes, experiments, ideas…
+
+Agree on a Workflow:
+Git lets you pick from a lot of different workflows: long-running branches, topic branches, merge or rebase, git-flow… Which one you choose depends on a couple of factors: your project, your overall development and deployment workflows and (maybe most importantly) on your and your teammates’ personal preferences. However you choose to work, just make sure to agree on a common workflow that everyone follows.
+
+Don't panic:
+Utiliser Git pour la premiere fois peux etre intimidant et vous pouvez avoir peur de faire une erreur qui va tout détruire. 
+Tant que vous avez ccommitté votre travail (ou meme juste ajouté avec git add) votre travail ne sera pas perdu pendant au moins deux semaines a moins que vous vous forcer a vraiment le supprimer (run commands which manually purge it).
+
+When attempting to find your lost commits, first make sure you will not lose any current work. You should commit or stash your current work before performing any recovery efforts which might destroy your current work. After finding the commits you can reset, rebase, cherry-pick, merge, or otherwise do what is necessary to get the commit history and work tree you desire.
+
+Don't change published history
+
+Once you git push (or in theory someone pulls from your repo, but people who pull from a working repo often deserve what they) your changes to the authoritative upstream repository or otherwise make the commits or tags publicly visible, you should ideally consider those commits etched in diamond for all eternity. If you later find out that you messed up, make new commits which fix the problems (possibly by revert, possibly by patching, etc).
+
+Yes, of course git allows you to rewrite public history, but it is problematic for everyone and and thus it is just not best practice to do so.
+
+Choose a workflow:
+    Branch workflows:
+    Distributed workflows:
+    Release workflows:
+    Security model:
+    
+    
+Dividing work into repositories:
+
+Repositories sometimes get used to store things that they should not, simply because they were there. Try to avoid doing so.
+
+    One conceptual group per repository.
+    Read access control is at the repo level
+    Separate repositories for files which might be needed by multiple projects
+    Separate repositories for large binary files
+    Separate repositories for planned continual history rewrites
+    Group concepts into a superproject
+    
+    
+TRUCS:
+
+Auto-Completion:
+If you use the Bash shell, Git comes with a nice auto-completion script you can enable. Download it directly from the Git source code at https://github.com/git/git/blob/master/contrib/completion/git-completion.bash . Copy this file to your home directory, and add this to your .bashrc file:
+
+Git Aliases:
+Git doesn’t infer your command if you type it in partially. If you don’t want to type the entire text of each of the Git commands, you can easily set up an alias for each command using git config. Here are a couple of examples you may want to set up:
