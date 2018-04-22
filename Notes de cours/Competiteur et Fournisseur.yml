@@ -1,0 +1,32 @@
+
+Competiteur:
+    SVN : Ancetre de git avec une seul branche (master)
+    VCS:
+        Git:
+        Mercurial : 
+            Comparé a Git
+            Plus facile a apprendre
+            Meilleur User Interface/User Experience
+            Cache les fonctions avancés
+            Moins populaire
+        Perforce:
+Fournisseurs:
+    Github:
+        Plus populaire
+        Gratuit pour les dossiers privés
+        Tres connu puisque tous les projet open-source sont sur Github
+        Bon pour se trouver un emploi
+        GitHub Enterprise plan starts at $2500 / 10 user / year
+    Gitlab:
+        Le code source de Gitlab est open-source
+        Self hostable
+        GitLab Enterprise edition cost $39 / user / year
+    Bitbucket:
+        Peux acheter le code source
+        Paying $10 for Bitbucket Small Teams
+    Choosing:
+        Need to thrust an open-source platform; pick GitLab.
+        Using other products from Atlassian, use Bitbucket.
+        Open source project then GitHub is definitely a great choice.
+    Autres:
+        Coding : Git chinois

@@ -1,0 +1,42 @@
+﻿Master: Branche principale sur lequel la version Prod se trouve
+Stage : Prepare un fichier pour un changement
+Push : Envoye les doccuments vers un serveur distant
+Commit : Change la version courante des documents
+
+Fetch : Recupere l'historique recent
+Pull : Recupere ce qui est sur le repository
+Branch : Liste les branches
+
+Diff : Voit les conflit de merge
+Merge : Fusionne deux branches
+
+Checkout : Change de branche actuelle
+Remote : Se connect sur un repository
+Remote : Manage the set of repositories ("remotes") whose branches you track.
+Status : Liste les changements qui ont besoin d'etre commité
+
+Init : Create a new repository
+Clone : Cree une copie de travail
+Config : Change les configuration dont le nom ou l'email de l'utilisateur
+Add : Ajoute un fichier
+Tag : Marque un changement significatif
+Grep : Fait une recherche
+Blame : Permet de voir qui a modifié chaque partie du Code
+
+Log : Voir l'historique des commits
+Reset : Change la version actuelle pour une version précédente
+
+SCM : 
+    Software Configuration Management
+    Software Change Management
+    Source Code Management
+    VCS: Version Control Tool
+        SVN : Subversion
+            Versioning functionality.
+            Subversion is centralized. 
+            It aims to solve the same sorts of problems, 
+            Forcing all activity to go through one location that everyone uses.
+        Easier but less flexible
+        CVS :
+Repository:
+            

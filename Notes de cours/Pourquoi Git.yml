@@ -1,0 +1,40 @@
+﻿
+Why:
+    Quand vous programmer un logiciel en équipe, vous pouvez vous partager du code dans Skype, Slack ou Discord. Mais plus l'équipe grossi plus ca devient chaotique. Et meme utiliser Google Docs va etre impossible a débugger s'il y a un autre développer qui modifi votre code pendant que vous faites des tests.
+
+Creation:
+    Crée par Linus Torvald, le créateur de Linux en 2005, en deux semaines.
+
+What:
+Imaginez que vous etes en train de créer un jeu video.
+
+Vous réussissez a faire apparaitre la fenetre, vous n'etes pas sur de comment vous avez fait mais vous etes content.
+Probleme: Ajouter des bugs en continuant de programmer ou perdre votre code
+Solution: Donc vous faites un back up.
+Probleme: Vous continuez tranquilement votre jeu et votre ami veux vous aider a programmer.
+Solution: Partager votre code sur Skype, Slack ou Discord
+Probleme: Vous etes quatre a travailler sur le jeu et ca devient bcp d'ouvrage a tout gerer le code
+Solution: Vous utiliser google Doc pour avoir une seule version du code
+Probleme: C'est un enfer a débugger du code quand qqn d'autre change le code en meme temps
+Solution: Une version master et tout le monde a sa propre version qui est comparé seulement avec le master
+
+    Avant de parler de Git, je vais parler de son ancetre; le SVN.
+    Le SVN centralise le les version du code source du logiciel a un seul endroit
+    La seule chose qui distingue les versions, c'est quand elles ont été faites.
+    Donc, c'est facile de savoir que la meilleure version est surement la version la plus récente.
+    Le problème, c'est que c'est difficile a travailler a plusieurs sur la meme version.
+
+    
+    Distributed vs Centralized
+
+    Git est un System de controle de version
+    
+    
+    
+    Systeme de backup de fichier code source
+    
+    Version la plus stable et avancé
+    Gratuit
+    
+
+
