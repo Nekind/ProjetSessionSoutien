@@ -1,6 +1,11 @@
 Commandes avancées : 
-Clone
-Config
-Tag
-Blame
-
+Clone : 
+    Cree une copie de travail
+Config : 
+    Change les configuration dont le nom ou l'email de l'utilisateur
+Tag : 
+    Marque un changement significatif
+Grep : 
+    Fait une recherche
+Blame : 
+    Permet de voir qui a modifié chaque partie du Code

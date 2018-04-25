@@ -1,40 +1,27 @@
-﻿
+﻿What:
+Git est un System de controle de version
+    
+On peux voir ca comme un systeme de backup de fichier code source. Sauf qu'au lieu d'etre un back-up, la version distante est la version principale, qu'on appelle Master. On essaye toujours de garder la version la plus stable et avancé sur le master.
+
+Si vous devenez un développeur, vous allez avoir besoin d'apprendre git, c'est une certitude. Si vous etes en réseau, vous allez probablement avoir a installer git sur un réseau et vous allez peux-etre aussi l'utiliser pour versionner vos scripts.
+
+
 Why:
-    Quand vous programmer un logiciel en équipe, vous pouvez vous partager du code dans Skype, Slack ou Discord. Mais plus l'équipe grossi plus ca devient chaotique. Et meme utiliser Google Docs va etre impossible a débugger s'il y a un autre développer qui modifi votre code pendant que vous faites des tests.
+Imaginez que vous etes en train de créer un programme.
+
+Quand vous etes le seul a programmer, il y a une seule version du code; c'est facile a gérer. Si vous etes deux, vous avez deux versions différente, et un lien de transfert de code. A trois, vous avez trois liens de transfert. A 4, il y a 5 lien de transfert; la complexité augmente rapidement.
+
+Pour régler le probleme, vous décider d'utiliser un seul projet que vous travailler tous a distance dessus. Un peu comme Google Docs. Il y a une seule version, mais quand vous etes en train de débugger il risque d'y avoir qqn d'autre qui va modifier le code. Et ca va faire planter votre débuggage. Vous n'avez pas envie de débugger votre débuggage alors vous trouvez une autre solution.
+
+Au lieu d'envoyer le code a tout le monde, vous centralisez la fusion de code. Tout le monde, fusionne son code avec un seul projet. Et ca fonctionne bien, jusqu'a temps que vous soyez 50 développeurs sur le meme projet. Vous allez donc diviser la version centrale en plusieurs branches qui ont des responsabilités distinctes.
+
+Et puisque ce n'était pas assez complexe, il faut prendre en compte que toutes ces versions changent dans le temps, donc on a encore plus de version différentes.
 
 Creation:
-    Crée par Linus Torvald, le créateur de Linux en 2005, en deux semaines.
+Crée par Linus Torvald, le créateur de Linux en 2005, en deux semaines.
+Il l'a créé car il n'aimait pas les SCM qui existaient a l'époque.
+Et il en avait besoin pour controle les versions du noyau de linux
+Et plusieurs personnes étaient toujours a utiliser des fichiers compressé pour se partager le code
 
-What:
-Imaginez que vous etes en train de créer un jeu video.
-
-Vous réussissez a faire apparaitre la fenetre, vous n'etes pas sur de comment vous avez fait mais vous etes content.
-Probleme: Ajouter des bugs en continuant de programmer ou perdre votre code
-Solution: Donc vous faites un back up.
-Probleme: Vous continuez tranquilement votre jeu et votre ami veux vous aider a programmer.
-Solution: Partager votre code sur Skype, Slack ou Discord
-Probleme: Vous etes quatre a travailler sur le jeu et ca devient bcp d'ouvrage a tout gerer le code
-Solution: Vous utiliser google Doc pour avoir une seule version du code
-Probleme: C'est un enfer a débugger du code quand qqn d'autre change le code en meme temps
-Solution: Une version master et tout le monde a sa propre version qui est comparé seulement avec le master
-
-    Avant de parler de Git, je vais parler de son ancetre; le SVN.
-    Le SVN centralise le les version du code source du logiciel a un seul endroit
-    La seule chose qui distingue les versions, c'est quand elles ont été faites.
-    Donc, c'est facile de savoir que la meilleure version est surement la version la plus récente.
-    Le problème, c'est que c'est difficile a travailler a plusieurs sur la meme version.
-
-    
-    Distributed vs Centralized
-
-    Git est un System de controle de version
-    
-    
-    
-    Systeme de backup de fichier code source
-    
-    Version la plus stable et avancé
-    Gratuit
-    
 
 
