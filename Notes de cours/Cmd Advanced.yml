@@ -9,3 +9,11 @@ Grep :
     Fait une recherche
 Blame : 
     Permet de voir qui a modifié chaque partie du Code
+Cherry-pick:
+    Permet de choisir les changements un a un
+Revert:
+    Retourne un changement a sa version precedente (Ce n'est pas une annulation)
+Bisect:
+    Recherche binaire qui permet de trouver quand un bug a été introduit
+Apply:
+    Applique un patch sur les fichiers

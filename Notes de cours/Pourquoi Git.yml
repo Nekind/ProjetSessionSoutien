@@ -1,5 +1,5 @@
 ﻿What:
-Git est un System de controle de version
+Git est un systeme de controle de version
     
 On peux voir ca comme un systeme de backup de fichier code source. Sauf qu'au lieu d'etre un back-up, la version distante est la version principale, qu'on appelle Master. On essaye toujours de garder la version la plus stable et avancé sur le master.
 
@@ -9,13 +9,13 @@ Si vous devenez un développeur, vous allez avoir besoin d'apprendre git, c'est 
 Why:
 Imaginez que vous etes en train de créer un programme.
 
-Quand vous etes le seul a programmer, il y a une seule version du code; c'est facile a gérer. Si vous etes deux, vous avez deux versions différente, et un lien de transfert de code. A trois, vous avez trois liens de transfert. A 4, il y a 5 lien de transfert; la complexité augmente rapidement.
+Quand vous etes le seul a programmer, il y a une seule version du code; c'est facile a gérer. Si vous etes deux, vous avez deux versions différente, et un lien de transfert de code. A trois, vous avez trois liens de transfert. A 4, il y a 6 lien de transfert; la complexité augmente rapidement.
 
-Pour régler le probleme, vous décider d'utiliser un seul projet que vous travailler tous a distance dessus. Un peu comme Google Docs. Il y a une seule version, mais quand vous etes en train de débugger il risque d'y avoir qqn d'autre qui va modifier le code. Et ca va faire planter votre débuggage. Vous n'avez pas envie de débugger votre débuggage alors vous trouvez une autre solution.
+Pour régler le probleme, vous décider d'utiliser un seul projet que vous travailler tous a distance dessus. Un peu comme Google Docs. Il y a une seule version, mais quand vous etes en train de débugger il risque d'y avoir qqn d'autre qui va modifier le code en meme temps. Et ca va faire planter votre débuggage. Vous devez trouvez une autre solution.
 
-Au lieu d'envoyer le code a tout le monde, vous centralisez la fusion de code. Tout le monde, fusionne son code avec un seul projet. Et ca fonctionne bien, jusqu'a temps que vous soyez 50 développeurs sur le meme projet. Vous allez donc diviser la version centrale en plusieurs branches qui ont des responsabilités distinctes.
+Au lieu d'envoyer le code a tout le monde, vous centralisez la fusion de code. Tout le monde, fusionne son code avec un seul projet. C'est un reseau en étoile. Et ca fonctionne bien, jusqu'a temps que vous soyez 50 développeurs sur le meme projet. Vous allez donc diviser la version centrale en plusieurs branches qui ont des responsabilités distinctes.
 
-Et puisque ce n'était pas assez complexe, il faut prendre en compte que toutes ces versions changent dans le temps, donc on a encore plus de version différentes.
+Et puisque ce n'était pas assez complexe, n'oubliez pas de prendre en compte que toutes ces versions changent dans le temps, donc on a encore plus de version différentes.
 
 Creation:
 Crée par Linus Torvald, le créateur de Linux en 2005, en deux semaines.

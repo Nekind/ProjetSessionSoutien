@@ -9,6 +9,7 @@ Pull : Recupere ce qui est sur le repository
 Branch : Liste les branches
 
 Diff : Voit les conflit de merge
+Patch : Le résultat d'un diff
 Merge : Fusionne deux branches
 
 Checkout : Change de branche actuelle
