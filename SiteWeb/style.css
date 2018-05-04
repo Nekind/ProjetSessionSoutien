@@ -102,6 +102,29 @@ z-index:1;
     margin-top: 70px;
    }
 
+   .wrapper {
+      display: block;
+      float: left;
+      margin-left: 20px;
+   }
+
+    .wrapper p {
+      transition: all 1s ;
+
+    }
+
+    .hidden {
+      opacity: 0;
+    }
+   #paragraphe1id {
+     color: white;
+     margin-left: 30px;
+   }
+   #paragraphe2id {
+     color: white;
+     margin-left: 30px;
+   }
+
 .button span {
     cursor: pointer;
     display: inline-block;
