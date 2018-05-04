@@ -99,7 +99,7 @@ z-index:1;
     cursor: pointer;
     margin: 5px;
     margin-left: 20px;
-    margin-top: 70px;
+    margin-top: 10px;
    }
 
    .wrapper {
@@ -110,11 +110,14 @@ z-index:1;
 
     .wrapper p {
       transition: all 1s ;
-
     }
 
     .hidden {
       opacity: 0;
+    }
+
+    .nothidden {
+      opacity: 1;
     }
    #paragraphe1id {
      color: white;
