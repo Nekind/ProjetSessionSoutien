@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: Logo;
-    src: url(coolvetica rg.ttf);
+    src: url(coolveticarg.ttf);
 }
 
 body {
@@ -13,14 +13,35 @@ body {
   background-repeat: repeat-y;
   background-image: url(backgroundimage.jpg);
   position:absolute;
-left:0;
-right:0;
-top:0;
-bottom:0;
-background-size:cover;
-z-index:1;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-size:cover;
+  z-index:1;
+}
+#background_installation {
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-image: url(backgroundinstallation.jpg);
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-size:cover;
+    z-index:1;
 }
 
+
+  hr.style-five {
+    margin-top: 50px;
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 2px 1px white;
+    margin-right: 30px;
+    margin-left: 30px;
+}
 .content{
 	position:relative;
 	z-index:2;
@@ -56,6 +77,22 @@ z-index:1;
   letter-spacing: -1px;
   line-height: 1;
 }
+
+.entete_installation {
+  padding-top: 50px;
+  padding-left: 70px;
+  text-align: center;
+}
+
+.entete_installation p{
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
 
 .ulNavBar {
   list-style-type: none;
@@ -151,4 +188,47 @@ z-index:1;
 .button:hover span:after {
     opacity: 1;
     right: 0;
+}
+
+.etapes {
+  padding-top: 20px;
+  color: white;
+  font-size: 30px;
+  margin-left: 30px;
+}
+img {
+  margin-left: 50px;
+}
+.petapes {
+  font-size: 16px;
+  color: white;
+  margin-left: 50px;
+}
+
+#resize {
+  height: 700px;
+  width: 900px;
+}
+
+
+.slideanim {
+  visibility:hidden;
+  visibility:visible\9;
+}
+.slideanim.slide {visibility: visible; animation:slide 1s;}
+.slideanim::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
 }
