@@ -25,3 +25,9 @@ Et plusieurs personnes étaient toujours a utiliser des fichiers compressé pour
 
 
 
+Desavantages:
+Pas intuitif a apprendre
+Mauvais pour la gestion des dépendences
+Pas de controle d'acces
+Copie les fichiers au complet
+Deviens lent quand l'historique deviens tres long (+10k commits)

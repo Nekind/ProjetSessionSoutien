@@ -1,0 +1,11 @@
+git config merge.tool meld
+git config --global mergetool.meld.path /P/Meld/Meld.exe
+git mergetool
+git diff
+
+
+
+Si old == new
+
+
+

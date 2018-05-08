@@ -6,7 +6,7 @@ Vous n'etes pas obligé de committer tous vos fichiers sur git, vous pouvez util
 Mot de passe et clés SSH:
 Il est fortement deconseillé d'include des informations confidentielles sur Github.
 Car il y a des bots qui scannent tous les changements pour trouver des mot de passes.
-Meme dans des répertoires privés
+# Meme dans des répertoires privés
 
 Description de modification:
 Décrit ce qui a été changé et le pourquoi
