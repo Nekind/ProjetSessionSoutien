@@ -1,52 +1,47 @@
+Notes: Tout ces conseils sont dépendants de votre workflow donc, lisez et juger avant de les appliquer.
 
-
-gitignore:
+.gitignore:
 Vous n'etes pas obligé de committer tous vos fichiers sur git, vous pouvez utiliser le fichier de configuration .gitignore pour dire a git d'ignorer certain fichier et certain dossiers lorsque les versions sont comparé.
 
+:Il y a aussi https://github.com/github/gitignore qui contient des règles générales de .gitignore pour la majorité des languages.
+
+ 
 Mot de passe et clés SSH:
-Il est fortement deconseillé d'include des informations confidentielles sur Github.
+Il est fortement deconseillé de mettre des informations confidentielles sur Github.
 Car il y a des bots qui scannent tous les changements pour trouver des mot de passes.
-# Meme dans des répertoires privés
+Meme dans des répertoires privés, il faut faire attention car votre mot de passe de Administrateur de systeme ne devrait pas etre disponible a un stagiaire. Donc, il est important d'avoir un .gitignore qui gère les fichiers d'identification comme les fichier SSH.
 
 Description de modification:
-Décrit ce qui a été changé et le pourquoi
+Décriver un résumé du changement et le pourquoi
+Soyez assez descriptif (50 caracteres).
 Mettre le plus important sur la premiere ligne
-Etre assez descriptif (plus de trois mots)
+Ensuite, faites deux sauts de ligne, et entrez une description plus complète si nécessaire.
+Utilisez des verbes au présent
+Utilisez votre nom au lieu du Je, Mes, Mon, Ma.
+Utilisez votre nom seulement si c'est absolument nécessaire
 
 
 Script:
-Puisque git est utilisable a partir de Bash et Cmd, vous pouvez faire des scripts
-Ayez un convention avec vos script
-Nommer vos scripts git_WipeEverything
+Puisque git est utilisable a partir de Bash et Cmd, vous pouvez faire des scripts Batch et Bash.
+Nommer vos scripts avec le préfixe git_  (ex: git_WipeEverything.sh) ca va rendre le tout plus facile a comprendre.
 
 
 
-Commitez des changements qui sont reliés:
-Régler deux bugs different valent d'avoir deux commit différents.
-Des petits changements rend plus facile a comprendre ce qui a été fait. 
-Et c'est plus simple d'inverse un mauvais changement. 
-Ils y a des outils qui permettent de changer seulement une partie du fichier.
+Commitez seulement des changements qui sont reliés:
+Régler deux bugs différents valent d'avoir deux commit différents. Des petits changements rend plus facile a comprendre ce qui a été fait. Et c'est plus simple d'inverse un mauvais changement. Ils y a des outils qui permettent de changer seulement une partie du fichier.
 
 Commitez Souvent:
 Commiter souvent permet de garder les changement petits ce qui facilite la comparaison de version, et de rester dans le meme scope. Ca permet de partager le code plus souvent avec les autres. Donc tlm a une version plus similaire et ca diminu les risques de conflits. Des gros commit rend les échanges très compliqués.
 
 
 Evitez de Commit du travail a moitié fait:
-    Vous pouvez diviser votre travail en plusieurs parties
-    But don’t commit just to have something in the repository before leaving the office at the end of the day. 
-    Si vous avez besoin de passer a une autre version du code temporairement, utiliser la commande stash au lieu de commit
+Vous pouvez diviser votre travail en plusieurs parties. Ne committez pas qqch a la fin de la journée par convention si vous ne l'avez pas terminé. Si vous avez besoin de passer a une autre version du code temporairement, utiliser la commande stash au lieu de commit. Si votre code ne fonctionne pas et qu'il y a beaucoup de travail a faire avant que ca soit fonctionnel, créez vous une autre branche pour faire vos commit.
 
-Si vous revenez de vacances, prenez le temps de réviser les transactions qui ont été faites en votre absence.
+Si vous revenez de vacances, prenez le temps de réviser les transactions par les autres membres de votre équipe qui ont été faites en votre absence.
     
 Testez votre code avant de faire un Commit:
-    Testez pour vous assurez que c'est bien complété et qu'il n'y a pas d'effet secondaire avec le reste du code.
-    C'est particulièrement important pour le code non local.
+Testez pour vous assurez que c'est bien complété et qu'il n'y a pas d'effet secondaire avec le reste du code. C'est particulièrement important pour le code non local.
 
-Ecrivez des bon message de commit:
-    Résume des changements(50 caracteres).
-    Saut de ligne
-    Répondre au Pourquoi? et Comment?
-    Utilisez des verbes au présent
 
 
 Ayez un back-up:
@@ -71,39 +66,32 @@ Choisissez selon:
 Entendez-vous en équipe
 
     
-Avant de travailler, fetch et pull la derniere version.
+Si vous avez pushé a la fin de la journée, faites un pull le lendemain main, certain de vos collègues ont peut-etre travaillé cette nuit. Avant de commencer a travailler, fetch et pull la derniere version.
 Apres avoir fini un milestone, commit et push votre travail.
 
 Ne paniquez pas:
 Utiliser Git pour la premiere fois peux etre intimidant et vous pouvez avoir peur de faire une erreur qui va tout détruire. 
 Tant que vous avez ccommitté votre travail (ou meme juste ajouté avec git add) votre travail ne sera pas perdu pendant au moins deux semaines a moins que vous vous forcer a vraiment le supprimer.
 
-Avant de récupérer une autre version, vous devriez commité ou stashé ce que vous avez de faitavant de faire qqch qui va remplacer votre version actuelle. Ensuite vous pourrez décider quoi faire.
+Avant de récupérer une autre version, vous devriez commité ou stashé ce que vous avez de fait avant de faire qqch qui va remplacer votre version actuelle. Ensuite vous pourrez décider quoi faire.
 
 Ne changez pas votre historique:
-Au lieu d'annuler ce que vous avez fait, réparer ce que vous avez fait.
-
-
-Yes, of course git allows you to rewrite public history, but it is problematic for everyone and and thus it is just not best practice to do so.
-
+Au lieu d'annuler ce que vous avez fait, réparer ce que vous avez fait. Meme si git permet de changer l'historique des transactions, ca rend la gestion du repositoire très compliqué puis que l'on perd de la logique. Donc, évitez si c'est possible.
     
-Diviser le travail en plusieurs repo:
-    One conceptual group per repository.
-    Permission de lecture au niveau du repo
-    Different repo pour:
-        les fichiers utilisé par plusieurs projets
-        les gros fichiers binaires
-        La planification d'un superproject
+Diviser en plusieurs repo:
+Essayez de garder un seul groupe conceptuel par repositoire. Et définissez les permissions de lecture/écriture au niveau du repositoire.
+Utilisez un repo différent pour:
+    La planification d'un superproject
+    Les fichiers commun a plusieurs projets
+    Les gros fichiers binaires
     
     
 TRUCS:
 
 Auto-Completion:
-Avec Bash, vous pouvez utiliser Git avec de un script d'auto-completion.
+Avec Bash, vous pouvez utiliser avec de un script qui termine de tapper vos commandes a moitié écrites.
 https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 
 
 Alias Git:
-Vous pouvez créer des alias pour vos commandes
-Pour utiliser "st" au lieu de "status"
-git config --global alias.st status
+Vous pouvez créer des alias pour vos commandes afin de diminuer le temps a tapper les commandes au clavier. Par exemple; pour utiliser "git st" au lieu de "git status", vous devez configurer l'alias avec la commande "git config --global alias.st status". Vous pouvez aussi faire un alias avec la commande qui est tres courante mais longue : "git log --graph --oneline"
