@@ -8,47 +8,104 @@
     <title>Projet Session GIT</title>
   </head>
   <body id="background_installation">
-      <header>
-          <a href="#" id="logo">
-            <img src="image/Git-Logo-White.png" alt="logo"/>
-          </a>
-        <nav>
-          <ul class="ulNavBar">
-            <li><a href="contacter.html">Contacter</a></li>
-            <li><a href="workflow.html">Workflow</a></li>
-            <li><a href="commandes.html">Commandes</a></li>
-            <li><a href="installation.html" class="active">Installation</a></li>
-            <li><a href="index.html">GIT</a></li>
+    <header>
+      <a href="#" id="logo">
+        <img src="image/Git-Logo-White.png" alt="logo"/>
+      </a>
+      <nav>
+        <ul class="ulNavBar">
+          <li><a href="contacter.html">Contacter</a></li>
+          <li><a href="workflow.html">Workflow</a></li>
+          <li><a href="commandes.html">Commandes</a></li>
+          <li><a href="installation.html" class="active">Installation</a></li>
+          <li><a href="index.html">GIT</a></li>
         </ul>
-        </nav>
-      </header>
+      </nav>
+    </header>
       <section>
         <div id="millieu" class="entete_installation slideanim">
           <p>Installation</p>
         </div>
       </section>
-      <div>
-        <hr class="style-five">
-      </div>
       <section>
+        <div>
+          <hr class="style-five">
+        </div>
       </section>
-      <div id="millieuecran" class="slideanim">
-        <h1 class="etapes slideanim">Étape 1</h1>
-        <p class="petapes slideanim">Voici le lien pour pouvoir télécharger Git</p>
-        <a id="lienGit" target="_tab" href="https://git-scm.com/download/win">Télécharger Git</a>
-        <img class="slideanim" id="resize" src="/SiteWeb/image/etapes1.jpg" alt="">
-        <h1 class="etapes slideanim">Étape 2</h1>
-        <p class="petapes slideanim">Vous pouvez choisir de créer un raccourci sur le bureau </p>
-        <img class="slideanim" src="/SiteWeb/image/etapes2.jpg" alt="">
-        <h1 class="etapes slideanim">Étape 3</h1>
-        <p class="petapes slideanim">À cette étape il est préférable de choisir Notepad ++ vu que depuis le début de la session vous utiliser cet éditeur de texte</p>
-        <img class="slideanim" src="/SiteWeb/image/etapes3.jpg" alt="">
-        <h1 class="etapes slideanim">Étape 4</h1>
-        <p class="petapes slideanim">Ici il est conseillé d'y aller avec MinTTY car la console de Windows est plus restrictive ( C'est très dur de "scroll back" pour voir l'historique des commandes, La console doit être configurée pour pouvoir utiliser les caractère non ASCII)</p>
-        <img class="slideanim" src="/SiteWeb/image/etapes4.jpg" alt="">
-
-      </div>
       <section>
+        <div id="millieuecran" class="slideanim">
+
+          <h1 class="etapes slideanim">Étape 1</h1>
+            <p class="petapes slideanim">Voici le lien pour pouvoir télécharger Git</p>
+              <a id="lienGit" target="_tab" href="https://git-scm.com/download/win">Télécharger Git</a>
+              <img class="slideanim" id="resize" src="image/etapes1.jpg" alt="">
+
+          <h1 class="etapes slideanim">Étape 2</h1>
+            <p class="petapes slideanim">Vous pouvez choisir de créer un raccourci sur le bureau </p>
+              <img class="slideanim" src="image/etapes2.jpg" alt="">
+
+          <h1 class="etapes slideanim">Étape 3</h1>
+            <p class="petapes slideanim">À cette étape il est préférable de choisir Notepad ++ vu que depuis le début de la session vous utiliser cet éditeur de texte</p>
+              <img class="slideanim" src="image/etapes3.jpg" alt="">
+
+          <h1 class="etapes slideanim">Étape 4</h1>
+            <p class="petapes slideanim">Ici il est conseillé d'y aller avec MinTTY car la console de Windows est plus restrictive ( C'est très dur de "scroll back" pour voir l'historique des commandes, Laconsole doit être configurée pour pouvoir utiliser les caractère non ASCII)</p>
+              <img class="slideanim" src="image/etapes4.jpg" alt="">
+
+          <h1 class="etapes slideanim">Étape 5</h1>
+            <p class="petapes slideanim">Maintenant, clicker sur "Lunch Git bash" pour pouvoir ouvrir la console et commencer à utiliser le programme (Pas besoin d'aller voir les release notes)</p>
+              <img class="slideanim" src="image/etapes5.jpg" alt="">
+
+          <h1 class="etapes slideanim">Étape 6</h1>
+            <p class="petapes slideanim">Vous devriez avoir une page qui ressemble à ceci :</p>
+              <img class="slideanim" src="image/etapes6.jpg" alt="">
+            <p class="petapes slideanim">À ce moment, nous vous suggérons d'aller changer quelle que configuration de votre "user" afin de mettre votre nom d'utilisateur et votre adresse email au projet que vous allez travailler dessus.</p>
+
+          <h1 class="etapes slideanim">Étape 7</h1>
+            <p class="petapes slideanim">Veuillez taper les commandse qui suivent :</p>
+            <p class="petapes slideanim">git config --global user.name "Votre Nom"</p>
+            <p class="petapes slideanim">git config --global user.email "VotreEmail@example.com"</p>
+              <img class="slideanim" src="image/etapes7.jpg" alt="">
+
+          <h1 class="etapes slideanim">Étape 8</h1>
+            <p class="petapes slideanim">Vous pouvez voir si les commandes ont fonctionnées en tapant</p>
+            <p class="petapes slideanim">git config --global user.name</p>
+            <p class="petapes slideanim">git config --global user.email</p>
+              <img class="slideanim" src="image/etapes8.jpg" alt="">
+
+          <h1 class="etapes slideanim">Étape 9</h1>
+            <p class="petapes slideanim">Pour avoir de l'aide sur une commande vous n'avez qu'à tapper </p>
+            <p class="petapes slideanim">git help "La commande"</la></p>
+            <p class="petapes slideanim">git help config</p>
+              <img class="slideanim" src="image/etapes9.jpg" alt="">
+            <p class="petapes slideanim">et une page HTML va s'ouvrire comme ceci</p>
+
+          <h1 class="etapes slideanim">Étape 10</h1>
+            <p class="petapes slideanim">Il y a deux façons de démarrer un dépôt dans Git. Prendre un dépôt et l'importer dans Git à partir d'un répertoire existant ou de cloner un dépôt qui existe déjà sur un autre serveur</p>
+            <p class="petapes slideanim">Allons-y ici avec l'importation d'un répertoire existant. Il faut d'abord vous déplacer pour aller dans le fichier ou le projet réside et utiliser la commande init ( Au lieu d'écrire "cd /Utilisateurs/ton-username /ProjetSessionSoutien/" nous allons utiliser l'abréviation ~ comme suit) </p>
+            <p class="petapes slideanim">cd ~/ProjetSessionSoutien</p>
+              <img class="slideanim" src="image/etapes10.jpg" alt="">
+
+          <h1 class="etapes slideanim">Étape 11</h1>
+            <p class="petapes slideanim">Et ensuite on créé le fichier .git qui comporte les configurations nécessaires pour utiliser Git sur ce dossier</p>
+            <p class="petapes slideanim">git init</p>
+              <img class="slideanim" src="image/etapes11.jpg" alt="">
+            <p class="petapes slideanim">Sur votre écran il sera écrit autre chose car moi j'ai déjà créé le dossier .git dans mon dossier de projet.</p>
+            <p class="petapes slideanim">Exemple :</p>
+              <img class="slideanim" src="image/etapes11_2.jpg" alt="">
+
+          <h1 class="etapes slideanim">Étape 12</h1>
+            <p class="petapes slideanim">Pour cloner un dépôt qui existe déjà on doit utiliser la commande Clone</p>
+            <p class="petapes slideanim">git clone https://github.com/Nekind/ProjetSessionSoutien</p>
+            <p class="petapes slideanim">Cela crée un répertoire au nom du fichier cloner et initialise .git à l'intérieur et clone tous les fichiers inclus dans le projet et les historiques. (Si vous voulez nommer le répertoire autrement on ne dois qu'ajouter le nom de celui-ci après la commande.</p>
+            <p class="petapes slideanim">git clone https://github.com/Nekind/ProjetSessionSoutien testprojet</p>
+              <img class="slideanim" src="image/etapes12.jpg" alt="">
+            <p class="petapes slideanim">Notre nouveau répertoire est maintenant créé</p>
+              <img class="slideanim" src="image/etapes12_2.jpg" alt="">
+            <p class="petapes slideanim">Pouvez-vous trouver "l'erreur" qui a été commit ici ?</p>
+            <p class="petapes slideanim">Quelle commande aurait du être utiliser avant le clone ?</p>
+            
+        </div>
       </section>
   </body>
 
