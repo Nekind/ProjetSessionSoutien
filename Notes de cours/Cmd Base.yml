@@ -15,3 +15,9 @@ Pull:
     combinaison de fetch et merge
 Fetch:
     download la liste des changement depuis la derniere fois,fait un "update" en local
+Stash:
+     "git stash" prend l'état en cours de votre répertoire de travail, c'est-à-dire les fichiers modifiés et
+     l'index, et l'enregistre dans la pile des modifications non finies que vous pouvez réappliquer à n'importe quel moment.
+     pour voir la liste des stash faire "git stash list" et pour utilisé une des version "stashé" faire
+     "git stash apply --index" (pour le dernier stash fait) OU "git stash apply stash@{SonIndex} --index" pour avoir une
+     version précise
