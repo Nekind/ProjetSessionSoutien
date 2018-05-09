@@ -19,6 +19,7 @@ Introduction:
         
 Vocabulaire (excluant les commandes):
     Repository : Endroit ou l'on stoque les metadata a propos des fichiers
+    Origin : 
     Master: Branche principale sur lequel la version Prod se trouve
     Stage : Prepare un fichier pour un changement
 
