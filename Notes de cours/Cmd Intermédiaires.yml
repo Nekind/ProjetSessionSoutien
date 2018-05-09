@@ -1,11 +1,14 @@
 Commandes avancées : 
 Init : 
-    crée un projet Git dans le chemin actuel
+    crée un projet Git dans le chemin actuel,possible aussi de définir le nom du projet
+    avec git init <nom du projet>
 Branch : 
      permet de créer ou se rediriger vers une branche du projet
 Diff : 
-    montre la modification fait sur le/les fichier
+    montre la modification fait sur le/les fichier les lignes ajoutées sont précédées
+    d’un « + » tandis que les lignes supprimées sont précédées d’un « - »)
+    (ou git diff <lien vers fichier>)
 Merge : 
-    pour "combiné" les modification avec le projet sur le serveur
+    pour "combiné" les modification avec le projet en local sur le serveur du projet
 Checkout : 
     pour créer une branche ou indiquer quel branche du projet vous voulez utilisé
