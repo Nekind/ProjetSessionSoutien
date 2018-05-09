@@ -1,31 +1,36 @@
+utilisé le Git:
+https://github.com/NoMeta/Test
+user : NoMeta
+passwd : abc1234
+
 Pour la présentation, ca devrait resembler a ca:
 
-Introduction:
-    Generalités:
+Introduction: #antho
+    Generalités:#antho
         Historique
-    Evolution sur SCM:
+    Evolution sur SCM:#antho
         Graph version
         
-    Pourquoi:
-    Competiteur:
+    Pourquoi:#antho
+    Competiteur:#antho
         Git
         Mercurial
         Perforce
         SVN, SCM, VCS, CVS...
-    Fournisseur:
+    Fournisseur:#antho
         Github
         GitLab
         BitBucket
         
-Vocabulaire (excluant les commandes):
+Vocabulaire (excluant les commandes):#antho
     Repository : Endroit ou l'on stoque les metadata a propos des fichiers
     Master: Branche principale sur lequel la version Prod se trouve
     Stage : Prepare un fichier pour un changement
 
-Commandes:
-    Base:
-        
-    Avancés:
+Commandes:#moi
+    Base:#moi
+    intermédiaire:#moi
+    Avancés:#antho
         Clone       : Cree une copie de travail
         Config      : Change les configuration dont le nom ou l'email de l'utilisateur
         Tag         : Marque un changement significatif
@@ -35,14 +40,15 @@ Commandes:
         Revert      : Retourne un changement a sa version precedente (Ce n'est pas une annulation)
         Bisect      : Recherche binaire qui permet de trouver quand un bug a été introduit
         Apply       : Applique un patch sur les fichiers
-Interfaces:
+    
+Interfaces:#moi
     CLI:
         Git Bash
         Git Gui
     GUI:
         
         
-Bonnes pratiques:
+Bonnes pratiques:#antho
     gitignore:
     Description de modification:
     Script:
@@ -68,17 +74,17 @@ Bonnes pratiques:
 
 
 
-Setup:
+Setup: #tomy
     Installation:
     Configuration:
     Exercise:
 
-Merge Conflict:
+Merge Conflict:#antho
     Presentation:
         Clone
         Modify x2
         Merge
-    Exercises:
+    Exercises: #gang
         Merger les projets de Prog
         Ajouter des commentaires
 
