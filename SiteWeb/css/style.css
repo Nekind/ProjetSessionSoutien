@@ -11,7 +11,7 @@ body {
 #background {
   background-attachment: fixed;
   background-repeat: repeat-y;
-  background-image: url(/SiteWeb/image/backgroundimage.jpg);
+  background-image: url(../image/backgroundimage.jpg);
   position:absolute;
   left:0;
   right:0;
@@ -23,7 +23,7 @@ body {
 #background_installation {
     background-attachment: fixed;
     background-repeat: repeat-y;
-    background-image: url(/SiteWeb/image/backgroundinstallation.jpg);
+    background-image: url(../image/backgroundinstallation.jpg);
     position:absolute;
     left:0;
     right:0;
