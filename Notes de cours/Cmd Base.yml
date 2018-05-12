@@ -1,23 +1,23 @@
 Commandes avancées : 
 Status : 
-    montre le nom des fichiers qui ont changé dans le projet
+    Montre le nom des fichiers qui ont changé dans le projet.
 Add : 
-    pour ajouté les fichier a la liste de ceux devant faire l'objet d'un commit
-    faire git add <nom fichier1> <nom fichier2> <nom fichierN> OU git add * (pour tout les fichiers)
+    Pour ajouté les fichier a la liste de ceux devant faire l'objet d'un commit
+    faire git add <nom fichier1> <nom fichier2> <nom fichierN> OU git add * (pour tout les fichiers).
 Commit : 
-    pour indiquer lors du commit quels fichiers précis doivent être « commités »
+    Pour indiquer lors du commit quels fichiers précis doivent être « commités »
     -git commit -a  pour « commiter » tous les fichiers qui étaient listés dans
     git status  dans les colonnes « Changes to be committed » et « Changed but not updated » (qu’ils soient en vert ou en rouge)
-    ou git commit <nomfichier1> <nomfichier2>  pour indiquer lors du commit quels fichiers précis doivent être « commités »
+    ou git commit <nomfichier1> <nomfichier2>  pour indiquer lors du commit quels fichiers précis doivent être « commités ».
 Push:
-    envoie au serveur hébergeant le projet le résultat du commit
+    Envoie au serveur hébergeant le projet le résultat du commit.
 Pull:
-    combinaison de fetch et merge
+    Combinaison de fetch et merge.
 Fetch:
-    download la liste des changement depuis la derniere fois,fait un "update" en local
+    Download la liste des changement depuis la derniere fois,fait un "update" en local.
 Stash:
-     "git stash" prend l'état en cours de votre répertoire de travail, c'est-à-dire les fichiers modifiés et
+     "git stash" Prend l'état en cours de votre répertoire de travail, c'est-à-dire les fichiers modifiés et
      l'index, et l'enregistre dans la pile des modifications non finies que vous pouvez réappliquer à n'importe quel moment.
      pour voir la liste des stash faire "git stash list" et pour utilisé une des version "stashé" faire
      "git stash apply --index" (pour le dernier stash fait) OU "git stash apply stash@{SonIndex} --index" pour avoir une
-     version précise
+     version précise.
