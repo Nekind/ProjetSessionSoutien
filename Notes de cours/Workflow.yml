@@ -1,0 +1,62 @@
+Workflow:
+Git a été concu pour etre très flexible, c'est ce qui le rend si complexe. Donc, il y a plusieurs facon de travailler avec Git. Un workflow est un méthode de travail sur comment utiliser Git, de facon consistante et productive. Lorsqu'on travaille en équipe, il est important de s'entendre sur comment travailler.
+
+C'est important de prendre en compte la culture de votre équipe.
+Est-ce que c'est facile de réparer les erreurs?
+Est-ce que c'est addapté a la taille de votre équipe?
+Est-ce que c'est trop complexe pour votre équipe?
+
+Voici quelques workflow populaires:
+
+Workflow Centralisé:
+En centralisé, tous les membres travaille en lien avec une seule version central, c'est un schéma en étoile. C'est le workflow le plus simple a comprendre et il fonctionne bien pour les petites équipe. La seule branche est le master, mais chaque dévelloppeur a sa propre version sur son ordinateur. Ce qui permet d'isoler les changement tant qu'il n'est pas nécessaire de merger avec le reste. Et lors que c'est le cas, tout les commit locaux sont envoyé au serveur central.
+
+Initialiser un repertoire central vide:
+On doit d'abord créer un repositoire central vide. Si le projet existe déja, on l'ajoute dans le repositoire. Par exemple, on utilise l'interface web de Github pour créer le projet et il va générer un lien qui va etre utilisé pour cloner le projet par chaque développeur. Git crée automatiquement un raccourci "origin" qui pointe sur le repositoire du lien.
+
+Workflow de base:
+- Editer les fichiers
+- Choisir qui faire dans le commit (Staging)
+- Sauvegarder les changements (Commit)
+- Push vers le repositoire central
+
+Ces changements sont locals donc ils ne sont pas influencé par ce qui se passe sur le serveur. La commande Push va essayer d'envoyer les changement vers le serveur. Mais si les changement ne sont pas compatible avec ceux d'un autre développeur, il y aura conflit. Et il faudra faire un Pull de ces changements pour merger les deux versions.
+
+Gérer les conflits avec Rebase:
+Avant de publier les changements, vous devez récupérer les travail des autres et dire a git que vous voulez mettre vos changement après le travail des autres. L'avantage est que ca donne un historique parfaitement lineaire et ca élimine les commit de type "Merge". Le probleme avec cette technique est que ca change l'historique, il est donc déconseillé et parfois interdit de l'utiliser dans votre entreprise. 
+
+Rebasing on Commits:
+On peux faire un rebase sur chaque commit pour le mettre sur la branche master. Ca divise donc le rebase en plusieurs petits changement qui sont plus facile a gérer. 
+
+Resolution de conflit:
+Git permet de gérer la majorité des merge automatiquement. Et lors que ca demande l'intervention humaine, git supporte l'utilisateur dans la démarche. Git fonctionne en continu, il va gérer les changement de chaque commit avant de passer au commit suivant.
+Mary successfully publishes her feature
+
+Repositoire Central Synchronisé:
+Ce workflow est l'équivalent d'utiliser Google Docs a plusieurs pour faire des changements en simultané. D'ailleurs, Microsoft vient de lancer l'extension Live Share pour Visual Studio qui utilise ce workflow. Ca facilite le développement, mais le problème est que pour tester et débugger c'est impossible de le faire puisque le code change sans qu'on le sache.
+
+Feature branching:
+Feature Branching est une extension du workflow Centralise. L'idée centrale est que tout  le développement de fonctionnalité se fasse sur des branches distinctes. Donc, la version centrale ne devrait jamais contenir de code non fonctionnel, ce qui est indispensable pour l'intégration continue.
+
+Gitflow Workflow:
+Gitflow Workflow est un model strict de branches avec des roles spécifique a chaqune et qui défini comment elles doivent interragir.
+
+Forking Workflow:
+Forking Workflow utilise un repositoire central, et chaque developpeur a son propre repositoire sur le serveur. Ca implique que chaque développeur possede sa version locale privée et une version publique sur le serveur.
+ 
+
+
+
+Ce qu'on peu en retirer:
+
+Le Workflow Centralisé est essentiel pour tous les autres workflow puisqu'ils ont tous une branche centrale. Les autres workflow ont tous leur facon spécialisé de gérer les branches.
+
+Un Workflow centralisé est bon pour les petites équipes. Mais la resolution de conflit va devenir pénible lorsque votre équipe va grossir. Il faudra donc penser a essayer Feature Branch Workflow. En ayant une branche pour chaque fonctionnalité, ca permet de diviser les équipes pour réduire les conflits de merge. 
+
+L'important, c'est de trouve le workflow qui convient a votre équipe et a votre entreprise. 
+
+
+
+
+
+

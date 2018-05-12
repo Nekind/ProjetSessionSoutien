@@ -1,5 +1,5 @@
 ﻿What:
-Git est un systeme de controle de version
+Git est un systeme de controle de version.
     
 On peux voir ca comme un systeme de backup de fichier code source. Sauf qu'au lieu d'etre un back-up, la version distante est la version principale, qu'on appelle Master. On essaye toujours de garder la version la plus stable et avancé sur le master.
 
@@ -24,10 +24,9 @@ Et il en avait besoin pour controle les versions du noyau de linux
 Et plusieurs personnes étaient toujours a utiliser des fichiers compressé pour se partager le code
 
 
-
 Desavantages:
 Pas intuitif a apprendre
 Mauvais pour la gestion des dépendences
-Pas de controle d'acces
+Pas de controle d'acces par défaut, il faut ajouter
 Copie les fichiers au complet
-Deviens lent quand l'historique deviens tres long (+10k commits)
+Devient lent quand l'historique deviens tres long (+10k commits)
