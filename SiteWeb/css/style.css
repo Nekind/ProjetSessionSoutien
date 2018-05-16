@@ -59,9 +59,18 @@ body {
 
 #millieu {
     margin: 0 auto;
-    width: 400px;
+    width: 600px;
 
 }
+
+#notes {
+    color:#FFFFFF;
+    margin: 0 auto;
+    width: 800px;
+    font-size: 20px;
+}
+
+
 .entete {
   padding-top: 50px;
   padding-left: 70px;
