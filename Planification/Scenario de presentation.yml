@@ -6,86 +6,63 @@ passwd : abc1234
 Pour la présentation, ca devrait resembler a ca:
 
 Introduction: #antho
-    Generalités:#antho
+    Generalités:
         Historique
-    Evolution sur SCM:#antho
+    Evolution sur SCM:
         Graph version
-        
-    Pourquoi:#antho
-    Competiteur:#antho
-        Git
-        Mercurial
-        Perforce
+    Pourquoi:
+    Competiteur:
+        Git, Mercurial, Perforce
         SVN, SCM, VCS, CVS...
-    Fournisseur:#antho
-        Github
-        GitLab
-        BitBucket
+    Fournisseur:
+        Github, GitLab, BitBucket
         
-Vocabulaire (excluant les commandes):#antho
-    Repository : Endroit ou l'on stoque les metadata a propos des fichiers
-    Origin : 
-    Master: Branche principale sur lequel la version Prod se trouve
-    Stage : Prepare un fichier pour un changement
-
-Commandes:#moi
-    Base:#moi
-    intermédiaire:#moi
-    Avancés:#antho
-        Clone       : Cree une copie de travail
-        Config      : Change les configuration dont le nom ou l'email de l'utilisateur
-        Tag         : Marque un changement significatif
-        Grep        : Fait une recherche
-        Blame       : Permet de voir qui a modifié chaque partie du Code
-        Cherry-pick : Permet de choisir les changements un a un
-        Revert      : Retourne un changement a sa version precedente (Ce n'est pas une annulation)
-        Bisect      : Recherche binaire qui permet de trouver quand un bug a été introduit
-        Apply       : Applique un patch sur les fichiers
+Vocabulaire (excluant les commandes): #antho
+    Commit, Repository, Origin, Master, Stage
     
-Interfaces:#moi
+Commandes:          #sunny
+    Base:
+    intermédiaire:
+    Avancés:        #antho
+        Tag, Grep, Blame, Cherry-pick, Revert, Bisect, Apply
+    
+Interfaces:         #sunny
     CLI:
         Git Bash
         Git Gui
     GUI:
+        ...
         
-        
-Bonnes pratiques:#antho
-    gitignore:
-    Description de modification:
-    Script:
-    Commitez des changements qui sont reliés:
-    Commitez Souvent:
-    Evitez de Commit du travail a moitié fait:
-    Testez votre code avant de faire un Commit:
-    Ayez un back-up:
-    Utilisez des branches:
-    Choisissez une méthode de travail en équipe:
-    Après un Milestone -> Commit:
-    Ne modifiez pas l historique passé:
-    Ne changez pas votre historique:
-    Diviser le travail en plusieurs repo:
-    Auto-Completion:
-    Alias Git:
-    Mot de passe et clés SSH:
+Bonnes pratiques:   #antho
+    gitignore
+    Description de modification
+    Script
+    Commitez des changements reliés
+    Commitez Souvent
+    Evitez de Commit du travail a moitié fait
+    Testez votre code avant de faire un Commit
+    Ayez un back-up
+    Utilisez des branches
+    Choisissez une méthode de travail en équipe
+    Après un Milestone -> Commit
+    Ne modifiez pas l historique passé
+    Ne changez pas votre historique
+    Diviser le travail en plusieurs repo
+    Auto-Completion
+    Alias Git
+    Mot de passe et clés SSH
 
 
-
-
-
-
-
-
-Setup: #tomy
+Setup:      #tomy
     Installation:
     Configuration:
     Exercise:
 
-Merge Conflict:#antho
-    Presentation:
-        Clone
-        Modify x2
-        Merge
-    Exercises: #gang
+Gestion de problèmes:
+    Presentation & schema:  #antho
+        Merge: Clone, Modify x2, Merge
+        Rollback: Revert & Reset
+    Exercise Final Merge:   #gang
         Merger les projets de Prog
         Ajouter des commentaires
 
