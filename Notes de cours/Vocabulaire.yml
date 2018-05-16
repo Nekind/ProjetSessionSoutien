@@ -1,8 +1,14 @@
 ﻿Repository : Endroit ou l'on stoque les metadata a propos des fichiers
 Master: Branche principale sur lequel la version Prod se trouve
+
+Origin : Lien vers le projet .git distant
+HEAD : Tete de la branche actuelle
+HEAD^ : Parent de la Tete
+
 Stage : Prepare un fichier pour un changement
-Push : Envoye les doccuments vers un serveur distant
+
 Commit : Change la version courante des documents
+Push : Envoye les doccuments vers un serveur distant
 
 Fetch : Recupere l'historique recent
 Pull : Recupere ce qui est sur le repository
