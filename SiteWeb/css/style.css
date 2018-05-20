@@ -24,7 +24,7 @@ body {
     background-attachment: fixed;
     background-repeat: repeat-y;
     background-image: url(../image/backgroundinstallation.jpg);
-    position:absolute;
+    position:absolute;v
     left:0;
     right:0;
     top:0;
@@ -33,6 +33,18 @@ body {
     z-index:1;
 }
 
+#background_commandes {
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-image: url(../image/backgroundcommandes.jpg);
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-size:cover;
+  z-index:1;
+}
 
   hr.style-five {
     margin-top: 50px;
@@ -42,6 +54,21 @@ body {
     margin-right: 30px;
     margin-left: 30px;
 }
+
+.font_namecommande {
+  font-size: 45px;
+}
+
+.namecommande {
+  color: white;
+  overflow: hidden;
+  margin-left: 30px;
+  padding-top: 30px;
+  text-align: center;
+  height: 100px;
+  
+}
+
 .content{
 	position:relative;
 	z-index:2;
@@ -66,7 +93,7 @@ body {
 #notes {
     color:#FFFFFF;
     margin: 0 auto;
-    width: 800px;
+    width: 1300px;
     font-size: 20px;
 }
 
@@ -102,6 +129,39 @@ body {
   line-height: 1;
 }
 
+.listcommande1 {
+  float: left;
+  width: 40%;
+  overflow: hidden;
+}
+
+.desccommande {
+  color: white;
+  overflow: hidden;
+  margin-left: 30px;
+  width: 800px;
+  padding-top: 30px;
+  height: 100px;
+}
+
+.entete_main {
+  padding-top: 50px;
+  padding-left: 70px;
+  text-align: center;
+}
+
+.font_desccommande {
+  font-size: 20px;
+}
+
+.entete_main p{
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
 
 .ulNavBar {
   list-style-type: none;
