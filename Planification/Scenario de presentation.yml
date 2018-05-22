@@ -5,6 +5,9 @@ passwd : abc1234
 
 Pour la présentation, ca devrait resembler a ca:
 
+Git est un systeme de gestion de version. En gros, ca veux dire qu'on essaye de garder un historique complet de tout les changements qui ont été fait. Principalement pour le code source, mais on peux aussi l'utiliser des recettes culinaires.
+Avant d'expliquer git, je vais commencer par explorer comment le besoin de.
+
 Introduction: #antho
     Generalités:
         Historique
@@ -17,9 +20,14 @@ Introduction: #antho
     Fournisseur:
         Github, GitLab, BitBucket
         
-Vocabulaire (excluant les commandes): #antho
-    Commit, Repository, Origin, Master, Stage
+Setup:      #tomy
+    Installation:
+    Configuration:
+    Exercise:
     
+Vocabulaire (excluant les commandes): #antho
+    Repository, Commit, Branch, Origin, Master, Stage, Head^
+
 Commandes:          #sunny
     Base:
     intermédiaire:
@@ -35,28 +43,21 @@ Interfaces:         #sunny
         
 Bonnes pratiques:   #antho
     gitignore
-    Description de modification
+    Description
     Script
-    Commitez des changements reliés
+    Changements reliés
     Commitez Souvent
-    Evitez de Commit du travail a moitié fait
-    Testez votre code avant de faire un Commit
+    Evitez le travail a moitié fait
+    Testez votre code
     Ayez un back-up
     Utilisez des branches
-    Choisissez une méthode de travail en équipe
-    Après un Milestone -> Commit
-    Ne modifiez pas l historique passé
-    Ne changez pas votre historique
+    Méthode de travail en équipe
+    Milestone -> Commit
+    Ne modifiez pas l'historique
     Diviser le travail en plusieurs repo
-    Auto-Completion
     Alias Git
     Mot de passe et clés SSH
 
-
-Setup:      #tomy
-    Installation:
-    Configuration:
-    Exercise:
 
 Gestion de problèmes:
     Presentation & schema:  #antho
