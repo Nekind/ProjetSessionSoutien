@@ -8,6 +8,12 @@ body {
   margin: 0;
 }
 
+  .active  {
+
+    border-bottom: 6px solid gray;
+
+  }
+
 #background {
   background-attachment: fixed;
   background-repeat: repeat-y;
@@ -20,6 +26,59 @@ body {
   background-size:cover;
   z-index:1;
 }
+
+#background_environnement {
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-image: url(../image/backgroundenvironnement.jpg);
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-size:cover;
+  z-index:1;
+}
+
+#background_conseils {
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-image: url(../image/backgroundconseils.jpg);
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-size:cover;
+  z-index:1;
+}
+
+#background_contacter {
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-image: url(../image/backgroundcontacter.jpg);
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-size:cover;
+  z-index:1;
+}
+
+#background_workflow {
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-image: url(../image/backgroundworkflow.jpg);
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-size:cover;
+  z-index:1;
+}
+
 #background_installation {
     background-attachment: fixed;
     background-repeat: repeat-y;
@@ -186,11 +245,87 @@ body {
     padding: 10px;
     }
 
+    .ulNavBarc li{
+      Float: right;
+      margin-top: 20px;
+    }
+
+    .ulNavBarc {
+      list-style-type: none;
+      margin: 0;
+      margin-top: 10px;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .ulNavBarc a{
+      display: block;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      font-size: 19px;
+      font-weight: 900;
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      }
+
+        .contacter_nom1 {
+          padding-top: 10px;
+          padding-left: 70px;
+          text-align: center;
+          color: black;
+          font-size: 40px;
+        }
+        .contacter_nom2 {
+
+          padding-top: 50px;
+          padding-left: 70px;
+          text-align: center;          
+          color: black;
+          font-size: 40px;
+  
+           }
+        .contacter_nom3 {
+
+            padding-top: 50px;
+            padding-left: 70px;
+            text-align: center;
+            color: black;
+            font-size: 40px;
+      
+         }
+        .contacteremails {
+          padding-top: 10px;
+          padding-left: 70px;
+          margin-left: 45%;
+          color: black;
+          font-size: 22px;
+        }
+
+        .contacteremails.slide-right p {
+            animation: 3s slide-right;
+          }
+          
+          @keyframes slide-right {
+            from {
+              margin-left: 100%;
+              width: 300%; 
+            }
+          
+            to {
+              margin-left: 0%;
+              width: 100%;
+            }
+          }
+  
+
 .ulNavBar a:hover {
-  transform: translatey(10px);
+  transform: translateY(10px);
   transition: all 0.25s linear;
 }
-
+.ulNavBarc a:hover {
+  transform: translateY(10px);
+  transition: all 0.25s linear;
+}
 .button {
     display: block;
     border-radius: 4px;
@@ -288,6 +423,7 @@ img {
   margin-top: 20px;
   text-align: left;
   float: left;
+  padding-bottom: 70px;
 }
 
 #millieuecran {

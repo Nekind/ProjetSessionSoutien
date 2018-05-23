@@ -15,16 +15,16 @@
             <li><a href="contacter.html">Contacter</a></li>
             <li><a href="conseils.html">Conseils</a></li>
             <li><a href="workflow.html">Workflow</a></li>
-            <li><a href="commandes.html">Commandes</a></li>
+            <li><a href="commandes.html"  class="active">Commandes</a></li>
             <li><a href="installation.html">Installation</a></li>
             <li><a href="environnement.html">Environnement</a></li>
-            <li><a href="index.html" class="active">GIT</a></li>
+            <li><a href="index.html">GIT</a></li>
         </ul>
         </nav>
       </header>
       <section>
         <div id="millieu" class="entete_main">
-          <p>Commandes</p>
+          <p>Commandes de base</p>
         </div>
       </section>
         <div>
@@ -32,26 +32,92 @@
         </div>
       <section class="font_namecommande">
         <div class="listcommande1">
-          <div class="namecommande">Lorem ipsum</div>
-          <div class="namecommande">Lorem ipsum</div>
-          <div class="namecommande">Lorem ipsum</div>
-          <div class="namecommande">Lorem ipsum</div>
-          <div class="namecommande">Lorem ipsum</div>
-          <div class="namecommande">Lorem ipsum</div>
-          <div class="namecommande">Lorem ipsum</div>
+          <div class="namecommande">Status:</div>
+          <div class="namecommande">Add:</div>
+          <div class="namecommande">Commit:</div>
+          <div class="namecommande">Push:</div>
+          <div class="namecommande">Pull:</div>
+          <div class="namecommande">Fetch:</div>
+          <div class="namecommande">Stash:</div>
         </div>       
       </section>
       <section class="font_desccommande">
         <div class="listecommande2">
-          <div class="desccommande">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissimos pariatur tempore officiis ipsa eius iusto laudantium non tempora similique?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, libero beatae. Laborum adipisci odio cumque dignissimos provident tenetur eligendi rem sunt! Quaerat sint quis omnis, quidem quasi itaque necessitatibus error.</div>
-          <div class="desccommande">Lorem ipsum dolor sit amet,</div>
-          <div class="desccommande">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissi</div>
-          <div class="desccommande">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissimos pariatur tempore officiis ipsa eius iusto laudantium non tempora similique?</div>
-          <div class="desccommande">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissimos pariatur tempore officiis ipsa eius iusto laudantium non tempora similique?</div>
-          <div class="desccommande">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissimos pariatur tempore officiis ipsa eius iusto laudantium non tempora similique?</div>
-          <div class="desccommande">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum dignissimos pariatur tempore officiis ipsa eius iusto laudantium non tempora similique? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor architecto, reprehenderit laudantium perspiciatis ad sequi.</div>
+          <div class="desccommande">Montre le nom des fichiers qui ont changé dans le projet.</div>
+          <div class="desccommande">    Pour ajouté les fichier a la liste de ceux devant faire l'objet d'un commit
+            faire git add "nom fichier1" "nom fichier2" "nom fichierN" OU git add * (pour tout les fichiers).</div>
+          <div class="desccommande">Pour indiquer lors du commit quels fichiers précis doivent être « commités »
+            -git commit -a  pour « commiter » tous les fichiers qui étaient listés dans
+            git status  dans les colonnes « Changes to be committed » et « Changed but not updated » (qu’ils soient en vert ou en rouge)
+            ou git commit "nomfichier1" "nomfichier2"  pour indiquer lors du commit quels fichiers précis doivent être « commités ».</div>
+          <div class="desccommande">Envoie au serveur hébergeant le projet le résultat du commit.</div>
+          <div class="desccommande">Combinaison de fetch et merge.</div>
+          <div class="desccommande">Download la liste des changement depuis la derniere fois,fait un "update" en local.</div>
+          <div class="desccommande"> "git stash" Prend l'état en cours de votre répertoire de travail, c'est-à-dire les fichiers modifiés et
+            l'index, et l'enregistre dans la pile des modifications non finies que vous pouvez réappliquer à n'importe quel moment.
+            pour voir la liste des stash faire "git stash list" et pour utilisé une des version "stashé" faire
+            "git stash apply --index" (pour le dernier stash fait) OU "git stash apply stash@{SonIndex} --index" pour avoir une
+            version précise.</div>
         </div>
       </section>
+      <section>
+        <div id="millieu" class="entete_main">
+          <p>Commandes intermédiaires</p>
+        </div>
+      </section>
+        <div>
+          <hr class="style-five">
+        </div>
+        <section class="font_namecommande">
+          <div class="listcommande1">
+            <div class="namecommande">Init:</div>
+            <div class="namecommande">Branch:</div>
+            <div class="namecommande">Diff:</div>
+            <div class="namecommande">Merge:</div>
+            <div class="namecommande">Checkout:</div>
+          </div>       
+        </section>
+        <section class="font_desccommande">
+          <div class="listecommande2">
+            <div class="desccommande">Crée un projet Git dans le chemin actuel,possible aussi de définir le nom du projet
+              avec git init "nom du projet".</div>
+            <div class="desccommande">Permet de créer ou se rediriger vers une branche du projet.</div>
+            <div class="desccommande">Montre la modification fait sur le/les fichier les lignes ajoutées sont précédées
+              d’un « + » tandis que les lignes supprimées sont précédées d’un « - »)
+              (ou git diff "lien vers fichier").</div>
+            <div class="desccommande">Pour "combiné" les modification avec le projet en local sur le serveur du projet.</div>
+            <div class="desccommande">Pour créer une branche ou indiquer quel branche du projet vous voulez utilisé.</div>
+          </div>
+        </section>
+        <div id="millieu" class="entete_main">
+          <p>Commandes avancées</p>
+        </div>
+      </section>
+        <div>
+          <hr class="style-five">
+        </div>
+        <section class="font_namecommande">
+          <div class="listcommande1">
+            <div class="namecommande">Tag:</div>
+            <div class="namecommande">Grep:</div>
+            <div class="namecommande">Blame:</div>
+            <div class="namecommande">Cherry-pick:</div>
+            <div class="namecommande">Revert:</div>
+            <div class="namecommande">Bisect:</div>
+            <div class="namecommande">Apply:</div>
+          </div>       
+        </section>
+        <section class="font_desccommande">
+          <div class="listecommande2">
+            <div class="desccommande">Marque un commit significatif</div>
+            <div class="desccommande">Fait une recherche</div>
+            <div class="desccommande">Permet de voir qui a modifié chaque partie du Code</div>
+            <div class="desccommande">Permet de choisir les changements un a un</div>
+            <div class="desccommande">Retourne un commit a sa version precedente (Ce n'est pas une annulation)</div>
+            <div class="desccommande">Recherche binaire qui permet de trouver quand un bug a été introduit</div>
+            <div class="desccommande">Applique un patch sur les fichiers</div>
+          </div>
+        </section>
   </body>
 
 </html>
