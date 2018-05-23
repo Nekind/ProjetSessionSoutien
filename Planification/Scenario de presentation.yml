@@ -22,8 +22,18 @@ Introduction: #antho
         
 Setup:      #tomy
     Installation:
+    Downloader Git
+    ensuite installer git etapes par etapes
+    notepad++
+    minTTY
     Configuration:
-    Exercise:
+    useremail
+    username
+    git help
+    cd~/
+    git init
+    gitclone
+    installation meld
     
 Vocabulaire (excluant les commandes): #antho
     Repository, Commit, Branch, Origin, Master, Stage, Head^
